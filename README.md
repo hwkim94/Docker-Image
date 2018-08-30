@@ -37,6 +37,7 @@ $ sudo add-apt-repository \
 
 - Docker CE 설치
 ```bash
+# 완료 후, 인스턴스 재접속
 $ sudo apt-get update
 $ sudo apt-get install docker-ce
 
@@ -65,7 +66,7 @@ $ docker build --tag {image 이름}:{version} .
 $ docker run -it --name {container 이름} -p 10001:10001 -v ~/workspace:/root/workspace {image 이름}:{version}
 ```
 
-## 5. 기본 명령어
+## 5. 기본 명령어 
 ```bash
 # 컨테이너 중지
 $ exit
