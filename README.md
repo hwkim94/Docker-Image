@@ -56,7 +56,6 @@ $ git clone https://github.com/hwkim94/Docker-Image.git
 
 ## 3. Image 생성
 ```bash
-$ git clone https://github.com/hwkim94/Docker-Image.git$
 $ cd Docker-Image/ybigta_docker_image
 $ docker build --tag {image 이름}:{version} .
 ```
