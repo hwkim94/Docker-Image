@@ -63,7 +63,7 @@ $ docker build --tag {image 이름}:{version} .
 
 ## 4. Container 생성
 ```bash
-$ docker run -it --name {container 이름} -p 10001:10001 -v ~/workspace:/root/workspace {image 이름}:{version}
+$ docker run -it --name {container 이름} -p {포트번호-포트번호}:{포트번호-} -v ~/workspace:/root/workspace {image 이름}:{version}
 ```
 
 ## 5. 기본 명령어 
