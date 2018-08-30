@@ -51,7 +51,42 @@ $ docker run hello-world
 
 ## 2. Git clone
 ```bash
-$ git clone 
+$ git clone https://github.com/hwkim94/Docker-Image.git
 ```
+
+## 3. Image 생성
+```bash
+$ git clone https://github.com/hwkim94/Docker-Image.git$
+$ cd Docker-Image/ybigta_docker_image
+$ docker build --tag {image 이름}:{version} .
+```
+
+## 4. Container 생성
+```bash
+$ docker run -it --name {container 이름} -p 10001:10001 -v ~/workspace:/root/workspace {image 이름}:{version}
+```
+
+## 5. 기본 명령어
+```bash
+# 컨테이너 중지
+$ exit
+
+# 컨테이너 재실행
+$ docker start {container 이름}
+# docker attach {container 이름}
+
+# 컨테이너를 중지하지 않고 bash만 빠져나갈 경우
+키보드에서 ctrl + p + q 입력
+```
+
+## 6. 기타
+- 초기 jupyter notebook 비밀번호 : admin
+
+
+## 8. Refernece
+이 문서의 모든 내용 및 코드는 아래의 두 깃헙을 참고/이용하였습니다.
+- [https://github.com/xodhx4/ybigta_pyspark_docker](https://github.com/xodhx4/ybigta_pyspark_docker)
+- [https://github.com/YBIGTA/EngineeringTeam/wiki](https://github.com/YBIGTA/EngineeringTeam/wiki)
+
 
 
