@@ -59,14 +59,14 @@ $ docker run hello-world
 $ git clone https://github.com/hwkim94/Docker-Image.git
 ```
 
-## 3. Image 생성(이미 생성된 image를 사용하면 여기서부터 )
-```bash
-$ cd Docker-Image/ybigta_docker_image
+## 3. Image 생성
+```bash$ cd Docker-Image/ybigta_docker_image
 $ docker build --tag {image 이름}:{version} .
 ```
 
 ## 4. Container 생성
 ```bash
+# 이미 생성된 image를 사용하면 여기서부터 시작
 $ docker run -it --name {container 이름} -p {포트번호-포트번호}:{포트번호-포트번호} -v ~/workspace:/root/workspace {image 이름}:{version}
 ```
 
