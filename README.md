@@ -1,6 +1,6 @@
 # Docker-Image
 Hadoop, Hive, Spark, Zookeeper, Kafka의 Docker Image
-- Ubuntu 16.04
+- Ubuntu 18.04
 - Java 1.8
 - Hadoop 2.9.0
 - Hive 2.3.3
