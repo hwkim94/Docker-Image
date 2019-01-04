@@ -61,13 +61,13 @@ $ git clone https://github.com/hwkim94/Docker-Image.git
 
 ## 3. Image 생성
 ```bash$ cd Docker-Image/ybigta_docker_image
-$ docker build --tag {image 이름}:{version} .
+$ docker build --tag ${image 이름}:${version} .
 ```
 
 ## 4. Container 생성
 ```bash
 # 이미 생성된 image를 사용하면 여기서부터 시작
-$ docker run -it --name {container 이름} -p {포트번호-포트번호}:{포트번호-포트번호} -v ~/workspace:/root/workspace {image 이름}:{version}
+$ docker run -it --name ${container 이름} -p ${포트번호-포트번호}:${포트번호-포트번호} -v ~/workspace:/root/workspace ${image 이름}:${version}
 ```
 
 ## 5. 기본 명령어  
@@ -76,8 +76,8 @@ $ docker run -it --name {container 이름} -p {포트번호-포트번호}:{포�
 $ exit
 
 # 컨테이너 재실행
-$ docker start {container 이름}
-$ docker attach {container 이름}
+$ docker start ${container 이름}
+$ docker attach ${container 이름}
 
 # 컨테이너를 중지하지 않고 bash만 빠져나갈 경우
 키보드에서 ctrl + p + q 입력
@@ -85,12 +85,12 @@ $ docker attach {container 이름}
 
 ## 6. 변경사항 commit
 ```bash
-$ docker commit {container 이름} {image 이름}
+$ docker commit ${container 이름} ${image 이름}
 ```
 
 ## 7. docker image 추출
 ```bash
-$ docker save {image 이름} > myImageTar.tar
+$ docker save ${image 이름} > myImageTar.tar
 ```
 
 ## 8. 기타
