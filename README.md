@@ -77,17 +77,27 @@ $ exit
 
 # 컨테이너 재실행
 $ docker start {container 이름}
-# docker attach {container 이름}
+$ docker attach {container 이름}
 
 # 컨테이너를 중지하지 않고 bash만 빠져나갈 경우
 키보드에서 ctrl + p + q 입력
 ```
 
-## 6. 기타
+## 6. 변경사항 commit
+```bash
+$ docker commit {container 이름} {image 이름}
+```
+
+## 7. docker image 추출
+```bash
+$ docker save {image 이름} > myImageTar.tar
+```
+
+## 8. 기타
 - 초기 jupyter notebook 비밀번호 : admin
 
 
-## 7. Refernece
+## 9. Refernece
 이 문서의 모든 내용 및 코드는 아래의 두 깃헙을 참고/이용하였습니다. 뿐만 아니라, 설치과정과 기본적인 명령어 부분은 '연세대학교 빅데이터 학회 YBIGTA 엔지니어링팀' 2018-여름방학 세션 중 김태오님의 Week2 - Git&Docker 세션의 자료 참고하였습니다. 
 
 - [https://github.com/xodhx4/ybigta_pyspark_docker](https://github.com/xodhx4/ybigta_pyspark_docker)
