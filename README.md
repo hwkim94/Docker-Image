@@ -95,6 +95,7 @@ $ docker save ${image 이름} > myImageTar.tar
 
 ## 8. 기타
 - 초기 jupyter notebook 비밀번호 : admin
+- 마지막 수정일 : 2019-01-04
 
 
 ## 9. Refernece
