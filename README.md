@@ -13,6 +13,8 @@ Hadoop, Hive, Spark, Zookeeper, Kafka의 Docker Image
 
 ## 0. 인스턴스 준비
 - AWS 인스턴스 준비
+- 필요한 port들 접속 ip 
+    - 10001 : jupyter notebook
 
 ## 1. Docker 설치
 
