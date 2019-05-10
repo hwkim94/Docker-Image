@@ -71,10 +71,10 @@ RUN cd $HOME && \
     conda install pip -y && \
     pip install msgpack && \
     pip install py4j && \
-    wget http://apache.mirror.cdnetworks.com/spark/spark-2.3.1/spark-2.3.1-bin-hadoop2.7.tgz && \
-    tar xvzf spark-2.3.1-bin-hadoop2.7.tgz && \
-    ln -s spark-2.3.1-bin-hadoop2.7 spark && \
-    rm spark-2.3.1-bin-hadoop2.7.tgz
+    wget http://apache.mirror.cdnetworks.com/spark/spark-2.3.3/spark-2.3.3-bin-hadoop2.7.tgz && \
+    tar xvzf spark-2.3.3-bin-hadoop2.7.tgz && \
+    ln -s spark-2.3.3-bin-hadoop2.7 spark && \
+    rm spark-2.3.3-bin-hadoop2.7.tgz
 COPY spark-env.sh /root/spark/conf/spark-env.sh
 ENV SPARK_HOME /root/spark
 ENV PYSPARK_DRIVER_PYTHON jupyter
@@ -94,10 +94,10 @@ RUN sh /root/hive_init.sh
 
 #Install zookeeper
 RUN cd $HOME && \
-    wget http://apache.mirror.cdnetworks.com/zookeeper/zookeeper-3.4.10/zookeeper-3.4.10.tar.gz && \
-    tar zxf zookeeper-3.4.10.tar.gz && \
-    ln -s zookeeper-3.4.10 zookeeper && \
-    rm zookeeper-3.4.10.tar.gz && \
+    wget http://apache.mirror.cdnetworks.com/zookeeper/zookeeper-3.4.14/zookeeper-3.4.14.tar.gz && \
+    tar zxf zookeeper-3.4.14.tar.gz && \
+    ln -s zookeeper-3.4.14 zookeeper && \
+    rm zookeeper-3.4.14.tar.gz && \
     mkdir zookeeper_data && \ 
     echo 1 > ./zookeeper_data/myid
 
@@ -105,10 +105,10 @@ COPY zoo.cfg /root/zookeeper/conf/zoo.cfg
 
 #Install kafka
 RUN cd $HOME && \
-    wget http://apache.mirror.cdnetworks.com/kafka/1.1.1/kafka_2.11-1.1.1.tgz && \
-    tar zxf kafka_2.11-1.1.1.tgz && \
-    ln -s kafka_2.11-1.1.1 kafka && \
-    rm kafka_2.11-1.1.1.tgz && \
+    wget http://apache.mirror.cdnetworks.com/kafka/2.1.1/kafka_2.11-2.1.1.tgz && \
+    tar zxf kafka_2.11-2.1.1.tgz && \
+    ln -s kafka_2.11-2.1.1 kafka && \
+    rm kafka_2.11-2.1.1.tgz && \
     mkdir kafka_data1 && \
     mkdir kafka_data2
 
