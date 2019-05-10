@@ -6,10 +6,10 @@ Hadoop, Hive, Spark, Zookeeper, Kafka의 Docker Image
 - Scala
 - Protobuf 2.6.1
 - Hadoop 2.9.0
-- Spark 2.3.1
+- Spark 2.3.3
 - Hive 2.3.4
-- Zookeeper 3.4.10
-- Kafka 1.1.1
+- Zookeeper 3.4.14
+- Kafka 3.1.1
 
 ## 0. 인스턴스 준비
 - AWS 인스턴스 준비
